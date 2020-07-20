@@ -1,3 +1,3 @@
 var main = require('./findMatchColor.js');
 
-main.findMatchColor("violet");
+main.findMatchColor("black");
