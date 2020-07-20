@@ -1,3 +1,3 @@
-var main = require('./findMatchColor.js');
+var main = require('./findMatchingColor.js');
 
-main.findMatchColor("black");
+main.findMatchingColor("white");

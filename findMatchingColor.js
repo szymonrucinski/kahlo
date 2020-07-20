@@ -3,20 +3,21 @@ var colourNameToHex = require('./colourNameToHex.js');
 const fetch = require('node-fetch');
 const { error } = require('console');
 
-module.exports.findMatchColor = function findMatchColor(colorName) {
+module.exports.findMatchingColor = function findMatchColor(colorName) {
 
   var hexColor = colourNameToHex(colorName);
+  var matchingColors;
   hexColor = hexColor.slice(1,hexColor.length);
 
   console.log(hexColor);
 
    fetch('https://www.thecolorapi.com/scheme?hex='+hexColor+'&mode=complement&count=5&format=json')
   .then(response => response.json())
-  .then(data => filterServerOutput(data))
+    .then(data => { matchingColors = filterServerOutput(data)})
   .catch(error);
 
 
-  return hexColor;
+  return matchingColors;
 
     
   
