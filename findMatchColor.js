@@ -17,7 +17,7 @@ module.exports.findMatchColor = function findMatchColor(colorName) {
 
 
 
-  fetch('https://www.thecolorapi.com/scheme?hex=008000&mode=monochrome&count=5&format=json')
+  fetch('https://www.thecolorapi.com/scheme?hex='+hexColor+'&mode=complement&count=5&format=json')
   .then(response => response.json())
   .then(data => {
     console.log(data)
