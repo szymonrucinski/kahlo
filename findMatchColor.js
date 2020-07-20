@@ -15,14 +15,13 @@ module.exports.findMatchColor = function findMatchColor(colorName) {
   
   // fetch('http://thecolorapi.com/scheme?'+'/hex=' + hexColor + '&mode=analogic-complement&count=3')
 
+  var obj;
 
-
-  fetch('https://www.thecolorapi.com/scheme?hex='+hexColor+'&mode=complement&count=5&format=json')
+   fetch('https://www.thecolorapi.com/scheme?hex='+hexColor+'&mode=complement&count=5&format=json')
   .then(response => response.json())
-  .then(data => {
-    console.log(data)
-  })
+  .then(data => filterServerOutput(data))
   .catch(error);
+
 
   return hexColor;
 
@@ -30,4 +29,21 @@ module.exports.findMatchColor = function findMatchColor(colorName) {
   
     
     
+  };
+
+  function filterServerOutput(data)
+  {
+    var outputMap = new Map();
+
+    for (var i =0; i<data.colors.length-1; i++)
+    {
+       outputMap.set(data.colors[i].name.value,data.colors[i].hex.value);
+
+
+    }
+
+
+    console.log(outputMap);
+    return outputMap;
+
   };

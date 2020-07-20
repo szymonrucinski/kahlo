@@ -1,3 +1,3 @@
 var main = require('./findMatchColor.js');
 
-main.findMatchColor("green");
+main.findMatchColor("violet");
