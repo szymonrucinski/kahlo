@@ -38,10 +38,7 @@ module.exports.findMatchColor = function findMatchColor(colorName) {
     for (var i =0; i<data.colors.length-1; i++)
     {
        outputMap.set(data.colors[i].name.value,data.colors[i].hex.value);
-
-
     }
-
 
     console.log(outputMap);
     return outputMap;
