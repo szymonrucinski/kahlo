@@ -1,0 +1,4 @@
+dialog (Concept) {
+  match: HexAndColor
+  template ("Number of dice")
+}

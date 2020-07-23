@@ -1,0 +1,5 @@
+ dialog (Concept) {
+   match : HexAndColor
+
+   template ("Color")
+ }

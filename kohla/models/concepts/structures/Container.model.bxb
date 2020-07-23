@@ -1,0 +1,7 @@
+structure (Container) {
+  description (Parent structure for holding HexAndColor)
+  property (object) {
+    type (HexAndColor)
+    min (Required) max (Many)
+  }
+}

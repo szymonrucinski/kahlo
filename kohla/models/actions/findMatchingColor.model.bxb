@@ -1,0 +1,12 @@
+action (findMatchingColor) {
+  type (Search)
+  description (function that returns structure of type 'HexAndColor' of matching color values)
+  collect {
+    input (colorName) {
+      type (ColorNameConcept)
+      min (Required) 
+      max (One)
+    }
+  }
+  output (HexAndColor)
+}

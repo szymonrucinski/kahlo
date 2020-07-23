@@ -1,0 +1,16 @@
+structure (HexAndColor) {
+  description (strucuture binding hexidecimal color value and it's name)
+  property (hex) {
+    type (Hex)
+    min (Required) max (One)
+    } 
+
+    property (color){
+    type (Color)
+    min (Required) max (One)
+  }
+   property (url){
+    type (Url)
+    min (Required) max (One)
+  }
+}

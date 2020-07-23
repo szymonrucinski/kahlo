@@ -1,0 +1,8 @@
+endpoints {
+   action-endpoints {
+     action-endpoint (findMatchingColor) {
+       accepted-inputs (colorName)
+       local-endpoint ("findMatchingColor.js")
+     }
+   }
+}

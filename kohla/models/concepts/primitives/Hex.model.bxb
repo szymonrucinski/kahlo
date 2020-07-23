@@ -1,0 +1,3 @@
+name (Hex) {
+  description (hexadecimal value of color)
+}

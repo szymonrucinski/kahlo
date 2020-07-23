@@ -1,0 +1,7 @@
+capsule-info {
+  display-name (Kahlo)
+  developer-name (Szymon Rucinski)
+  description ("I will help you to find the best possible color palette")
+  dispatch-name (Example Capsule)
+  icon-asset (images/icons/kahlo_icon.png)
+}

@@ -1,0 +1,3 @@
+name (ColorNameConcept) {
+  description (The input value provided as argument to run a findMatchingColor action)
+}
