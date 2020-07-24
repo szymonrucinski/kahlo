@@ -1,5 +1,6 @@
 <div style="text-align: center;">
-<span  style="text-align:center; color: #f2cf4a; font-family: Babas; font-size: 4em;">Kahlo </span>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+<span  style="text-align:center; color: #f2cf4a; font-family: Abril Fatface; font-size: 3em;">Kahlo </span>
 </div>
 
 <p align="center">
