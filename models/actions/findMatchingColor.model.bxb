@@ -1,0 +1,30 @@
+action (findMatchingColor) {
+  type (Search)
+  description (function that returns structure of type 'HexAndColor' of matching color values)
+  collect {
+    input (colorName) {
+      type (ColorNameConcept)
+      min (Required)
+      max (One)
+    }
+  }
+  output (HexAndColor) {
+
+    throws {
+      error (NoResultFound) {
+        property (hexAndColor) {
+          type (HexAndColor)
+        }
+        on-catch {
+          halt {
+            dialog ("Sorry I don't know such a color.")
+            // intent {
+            //   goal: HexAndColor
+            //   route : findMatchingColor ("red")
+            // }
+          }
+        }
+      }
+    }
+  }
+}

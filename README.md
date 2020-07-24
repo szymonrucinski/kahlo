@@ -1,17 +1,29 @@
-# What needs to be done?
+<div style="text-align: center;">
+<span  style="text-align:center; color: #f2cf4a; font-family: Babas; font-size: 4em;">Kahlo </span>
+</div>
 
-### Logic
+<p align="center">
+    <img width="150" src="assets/images/icons/kahlo_icon.png"/>
+</p>
+Kahlo is a Bixby voice assistant capsule named after a famouse mexican painter Frida Kahla. Who was famouse for her sense of colours and unique artworks. Kahlo gives you color inspirations and matching color palette that can go perfectly fine with almost every color.
+<br/>
+<br/>
+<p align="center">
+    <img width="200" src="assets/images/screenshots/1.png"/>
+    <img width="200" src="assets/images/screenshots/2.png"/>
+ 
+</p>
 
-- [ ] Removing duplicates from an array containig color names
-- [ ] Analyzing pieces of clothing
-  
-- [ ] Changing return type to an array 
-  
-### Views
+>Sample screenshots from Bixby
 
-- [ ] Creating Card like view with each: color name, hexadecimal code and image.
-- [ ] Beautiful & fresh layout
+Kahlo fetches data from [the color API](https://www.thecolorapi.com/) in order to get information about the matching color and displays them on the screen.
 
-### Learning
 
-- [ ] Teach program how to recognize words and context 
+ <h3 align="center">HOW TO USE IT? </h3>
+ Ask bixby the following questions to get your perfect color-match!
+
+```
+Find a color that matches red
+Find a color that goes with pink
+Find a color matching blue
+```

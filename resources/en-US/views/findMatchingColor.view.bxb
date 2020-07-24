@@ -1,0 +1,46 @@
+result-view {
+  match: HexAndColor (hexAndColor)
+  message {
+    if (exists(hexAndColor)) {
+      template-macro (RANDOM_ANSWER)
+    } else {
+      template ("I am sorry I cannot find a match for this color.")
+    }
+  }
+  render {
+    if (exists(hexAndColor)) {
+      layout {
+        section {
+          content {
+            for-each (hexAndColor) {
+              as (hexAndColor) {
+                image-card {
+                  column-size(1)
+                  title-area {
+                    halign (Center)
+                    slot1 {
+                      text {
+                        value ("#{value(hexAndColor.color)}")
+
+                        style (Title_M)
+                      }
+                    }
+                       slot2 {
+                          single-line {
+                      text {
+                        value ("#{value(hexAndColor.hex)}")
+
+                      }
+                          }
+                    }
+                  }
+                  image-url("#{value(hexAndColor.url)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

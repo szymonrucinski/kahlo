@@ -1,0 +1,16 @@
+template-macro-def (RANDOM_ANSWER) {
+ params {
+   param (lowerCaseText) {
+     type (viv.core.Text)
+   }
+ }
+ content {
+   choose (Random) {
+     template ("Here is what I found.") 
+     template ("You will love those colors.") 
+     template ("Those are a perfect match.") 
+     template ("Here are my best bets.") 
+
+   }
+ }
+}

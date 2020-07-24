@@ -1,0 +1,8 @@
+hints {
+  uncategorized {
+    hint ("Ask Kahlo To find a color that matches red")
+    hint ("With Kahlo find a color that goes with pink")
+    hint ("In Kahlo find a color matching blue")
+
+  }
+}

@@ -1,0 +1,16 @@
+capsule-info {
+  display-name (Kahlo)
+  dispatch-name (Kahlo)
+  developer-name (Szymon Rucinski)
+  description ("I will help you to find the best possible color palette")
+  icon-asset (images/icons/kahlo_icon.png)
+  website-url (https://szymonrucinski.pl)
+  search-keywords {
+    keyword (kahlo)
+    keyword (color)
+    keyword (color match)
+  }
+   action-bg-color (yellow)
+   action-fg-color (#FFFFFF)
+  
+}
